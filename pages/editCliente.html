@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Editar Cliente</title>
+  </head>
+  <body>
+    <div class="row">
+        <div class="col col-sm-4 text-center">
+            <form>
+              <div class="form-group">
+                <label for="inputAddress">ID</label>
+                <input type="text" class="form-control" id="inpEditId">
+                <div id="noIdError"></div>
+              </div>
+              <button type="button" onclick="insertPlaceholders()" class="btn btn-success" id="btnInsert">Inserir dados de auxílio</button>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Novo Nome</label>
+                    <input type="text" class="form-control" id="inpEditNome">
+                    <div id="noNameError"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Novo Número de telefone</label>
+                    <input type="text" class="form-control" id="inpEditTel">
+                    <div id="noTelError"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Novo Aniversário</label>
+                  <input type="text" class="form-control" id="inpEditVei">
+                  <div id="noVeiError"></div>
+                </div>
+                <button type="button" onclick="addEditedCliente()" class="btn btn-success" id="btn">Cadastrar</button>
+
+              </form>
+        </div>
+    </div>
+    <script src="../scripts/db.js"></script>
+    <script src="../scripts/editPage.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

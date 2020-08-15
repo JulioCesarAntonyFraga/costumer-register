@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Adicionar Horário</title>
+  </head>
+  <body onload="addInDropdown()">
+    <section id="nav-section" class="d-none d-sm-block">
+        <nav class="navbar navbar-expand-lg navbar-light shadow-lg p-3 mb-5 bg-white rounded">
+          <img style="width: 70px; height: 70px;" src="../assets/images/logoMel.png" alt="">
+          <h2>Makeup Nails</h2>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cadastros.html">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="horarios.html">Horários</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="historico.html">Histórico</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+    <div class="row">
+        <div class="col col-sm-6">
+            <img src="../assets/images/logoMel.png" style="width: 60%; height: 100%;">
+        </div>
+        <div class="col col-sm-4">
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCliente">Cliente</label><br>
+                    <select class="btn btn-danger" id="myDrop">
+
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputTipo">Tipo</label>
+                    <input type="text" class="form-control" id="inpTipo">
+                    <div id="noTipoError"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Data</label>
+                  <input type="text" class="form-control" id="inpData" placeholder="12/06/2003">
+                  <div id="noDataError"></div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Hora</label>
+                  <input type="text" class="form-control" id="inpHora" placeholder="12:20">
+                  <div id="noPrecoError"></div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Preço</label>
+                  <input type="text" class="form-control" id="inpPreco" placeholder="30,22">
+                  <div id="noPrecoError"></div>
+                </div>
+                <button type="button" class="btn btn-danger" onclick="addHorario()">Adicionar</button>
+
+              </form>
+        </div>
+    </div>
+
+    <script src="../scripts/db.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
